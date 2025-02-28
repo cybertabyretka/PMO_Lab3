@@ -12,7 +12,7 @@ from mlflow.models import infer_signature
 
 
 def transform_dataset(dataset):
-    x, y = dataset.drop(columns = ['price']), dataset_clear['price']
+    x, y = dataset.drop(columns = ['price']), dataset['price']
     scaler = StandardScaler()
     power_trans = PowerTransformer()
     X_scale = scaler.fit_transform(x.values)

@@ -30,7 +30,7 @@ def eval_metrics(actual, prediction):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("./df_clear.csv")
+    df = pd.read_csv("cars.csv")
     X, Y, power_transform = transform_dataset(df)
     X_train, X_val, Y_train, Y_val = train_test_split(X, Y,
                                                       test_size=0.3,

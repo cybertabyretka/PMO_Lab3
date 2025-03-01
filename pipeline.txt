@@ -4,16 +4,13 @@ pipeline {
     stages {
         stage('Download') {
             steps {
-
                 build job: 'Download'
             }
         }
 
         stage ('Train') {
-
             steps {
                 build job: 'TrainModel'
-
             }
         }
 

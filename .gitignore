@@ -1,3 +1,6 @@
 /venv/
 /.idea/
 /.git/
+/cars.csv
+/best_model.txt
+/mlruns/
